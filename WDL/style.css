@@ -12,7 +12,19 @@
 	width: 400px;
 	height: 400px;
 }
+#cart img{
+	width: 160px;
+	height: 70px;
+	-webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+#cart img:hover{
+	width: 200px;
+	cursor: pointer;
 
+}
 @font-face {
   font-family: 'Product Sans';
   font-style: normal;
@@ -155,6 +167,7 @@ a:hover{
 	font-size: 18px;
 	align-content: center;
 	opacity: 0.9;
+	z-index: 10000;
 }
 
 .correction{
