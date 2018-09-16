@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+	<head>
+            <meta charset="utf-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+            <link rel="shortcut icon" href="favicon\boxIcon.png"/>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="style.css"/>
+		<title>Box4U | Desserts</title>
+    </head>
+    
+    <body data-spy="scroll" data-target=".navbar">
+            <script type="text/javascript">
+                // Code for snippet
+                $(document).on('click', '.number-spinner button', function () {    
+                var btn = $(this),
+                    oldValue = btn.closest('.number-spinner').find('input').val().trim(),
+                    newVal = 0;
+                
+                if (btn.attr('data-dir') == 'up') {
+                    newVal = parseInt(oldValue) + 1;
+                } else {
+                    if (oldValue > 1) {
+                        newVal = parseInt(oldValue) - 1;
+                    } else {
+                        newVal = 1;
+                    }
+                }
+                btn.closest('.number-spinner').find('input').val(newVal);
+                });
+            </script>
+            <div class="container-fluid">	
+                    <div class="row">
+                        <div class="menuColumn">
+                            <p class="pHomeHead" style="left: 23%; top: 20px; text-indent: 10px;font-family: Product Sans;"><a href="index.html"><img src="trans2.png" alt="Main Logo" vspace="10" title="Box4U" style="float:left" hspace="20"/></a>
+                                <b>On the Menu - Desserts</b>
+                            </p>
+                        </div>
+                        <div class="correction">
+                                <nav class="navbar navbarDesign" data-spy="affix" data-offset-top="115">
+                                      <ul class="nav navbar-nav">
+                                        <li class="active" ><a href="index.html">Home</a></li>
+                                        <li ><a href="index.html#menuTab">Menu</a></li>
+                                        <li class="dropdown" ><a class="dropdown-toggle" data-toggle="dropdown" href="#">Orders<span class="caret"></span></a>
+                                          <ul class="dropdown-menu list-group" >
+                                            <li class="list list-group-item" ><a href="#">Corporate Orders</a></li>
+                                            <li class="list list-group-item" ><a href="#">Party Orders</a></li>
+                                          </ul>
+                                        </li>
+                                        <li class="dropdown" ><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
+                                            <ul class="dropdown-menu list-group" >
+                                              <li class="list list-group-item" ><a href="#">The Team</a></li>
+                                              <li class="list list-group-item" ><a href="#">The Website</a></li>
+                                              <li class="list list-group-item disabled" ><a href="#">The Mobile App</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown" ><a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact<span class="caret"></span></a>
+                                            <ul class="dropdown-menu list-group" >
+                                              <li class="list list-group-item" ><a href="#">E-mail</a></li>
+                                              <li class="list list-group-item" ><a href="#">Office Postbox</a></li>
+                                              <li class="list list-group-item" ><a href="#">Hotline</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <form class="navbar-form navbar-right" style="position: absolute; right: 20px;" action="">
+                                        <div class="input-group">
+                                          <input type="text" class="form-control textStyle" style="color: darkred;" placeholder="Search">
+                                          <div class="input-group-btn">
+                                            <button class="btn btnStyle" style="width: 40px;" type="submit">
+                                              <i class="glyphicon glyphicon-search"></i>
+                                            </button>
+                                          </div>
+                                        </div>
+                                      </form>
+                                  </nav>
+                                </div>
+                    <div class="container-fluid">
+                            <div class="row">
+                                <p class="headMenu" style="margin-top: 30px;">-----Desserts-----</p>
+                            </div>
+                        </div>
+                    
+    <div class="container">
+    <div class="row" style="margin-top: 30px;">
+    <div class="imgColumn col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <a href="#gulabjamunModal" data-toggle="modal" data-target="#gulabjamunModal">
+            <img class="img-thumbnail img-responsive" style="width: 380px; height: 278px;" alt="Gulab Jamun" src="Gulab-Jamun.jpg" title="Gulab Jamun" data-target="#gulabjamunModal"/>
+            <div class="bottom-left">Gulab Jamun</div>
+        </a>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="gulabjamunModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Gulab Jamun</h4>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive" style="width: 380px; height: 278px;" alt="Gulab Jamun" src="Gulab-Jamun.jpg" title="Gulab Jamun"/>
+              <br>
+              <div class="row" id="cart">
+                  <div class="col-lg-5"><br>
+                      <div class="input-group number-spinner">
+                          <span class="input-group-btn">
+                              <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+                          </span>
+                          <input type="text" class="form-control text-center" value="1">
+                          <span class="input-group-btn">
+                              <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+                          </span>
+                      </div>
+                  </div>
+                  <div class=" col-lg-7">
+                      <img  src="cart1.png">
+                  </div><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div class="imgColumn col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <a href="#rasmalaiModal" data-toggle="modal" data-target="#rasmalaiModal">
+            <img class="img-thumbnail img-responsive" style="width: 380px; height: 278px;" alt="Rasmalai" src="traditional_rasmalai_recipe.jpg" title="Rasmalai" data-target="rasmalai"/>
+            <div class="bottom-left">Rasmalai</div>
+        </a>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="rasmalaiModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Rasmalai</h4>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive" style="width: 380px; height: 278px;" alt="Rasmalai" src="traditional_rasmalai_recipe.jpg" title="Rasmalai"/>
+              <br>
+              <div class="row" id="cart">
+                  <div class="col-lg-5"><br>
+                      <div class="input-group number-spinner">
+                          <span class="input-group-btn">
+                              <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+                          </span>
+                          <input type="text" class="form-control text-center" value="1">
+                          <span class="input-group-btn">
+                              <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+                          </span>
+                      </div>
+                  </div>
+                  <div class=" col-lg-7">
+                      <img  src="cart1.png">
+                  </div><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="imgColumn col-lg-4 col-md-4 col-sm-6 col-xs-12">
+        <a href="#rasgullaModal" data-toggle="modal" data-target="#rasgullaModal">
+                <img class="img-thumbnail img-responsive" style="width: 380px; height: 278px;" alt="Rasgulla" src="Rasgulla1.jpg" title="Rasgulla" data-target="rasgulla"/>
+                <div class="bottom-left">Rasgulla</div>
+        </a>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="rasgullaModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Gulab Jamun</h4>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive" style="width: 380px; height: 278px;" alt="Rasgulla" src="Rasgulla1.jpg" title="Rasgulla"/>
+              <br>
+              <div class="row" id="cart">
+                  <div class="col-lg-5"><br>
+                      <div class="input-group number-spinner">
+                          <span class="input-group-btn">
+                              <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+                          </span>
+                          <input type="text" class="form-control text-center" value="1">
+                          <span class="input-group-btn">
+                              <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+                          </span>
+                      </div>
+                  </div>
+                  <div class=" col-lg-7">
+                      <img  src="cart1.png">
+                  </div><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 30px;">
+            <div class="imgColumn col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <a href="#kharvasModal" data-toggle="modal" data-target="#kharvasModal">
+                    <img class="img-thumbnail img-responsive" style="width: 380px; height: 278px;" alt="Kharvas" src="KHARVAS.jpg" title="Kharvas" data-target="kharvas"/>
+                    <div class="bottom-left">Kharvas</div>
+                </a>
+            </div>
+            <!-- Modal -->
+    <div class="modal fade" id="kharvasModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Kharvas</h4>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive" style="width: 380px; height: 278px;" alt="Kharvas" src="KHARVAS.jpg" title="Kharvas"/>
+              <br>
+              <div class="row" id="cart">
+                  <div class="col-lg-5"><br>
+                      <div class="input-group number-spinner">
+                          <span class="input-group-btn">
+                              <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+                          </span>
+                          <input type="text" class="form-control text-center" value="1">
+                          <span class="input-group-btn">
+                              <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+                          </span>
+                      </div>
+                  </div>
+                  <div class=" col-lg-7">
+                      <img  src="cart1.png">
+                  </div><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+            <div class="imgColumn col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <a href="#gajarhalwaModal" data-toggle="modal" data-target="#gajarhalwaModal">
+                    <img class="img-thumbnail img-responsive" style="width: 380px; height: 278px;" alt="Gajar Halwa" src="gajar-halwa.jpg" title="Gajar Halwa" data-target="gajarhalwa"/>
+                    <div class="bottom-left">Gajar Halwa</div>
+                </a>
+            </div>
+            <!-- Modal -->
+    <div class="modal fade" id="gajarhalwaModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Gajar Halwa</h4>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive" style="width: 380px; height: 278px;" alt="Gajar Halwa" src="gajar-halwa.jpg" title="Gajar Halwa"/>
+              <br>
+              <div class="row" id="cart">
+                  <div class="col-lg-5"><br>
+                      <div class="input-group number-spinner">
+                          <span class="input-group-btn">
+                              <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+                          </span>
+                          <input type="text" class="form-control text-center" value="1">
+                          <span class="input-group-btn">
+                              <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+                          </span>
+                      </div>
+                  </div>
+                  <div class=" col-lg-7">
+                      <img  src="cart1.png">
+                  </div><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+            <div class="imgColumn col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <a href="#chocolavacakeModal" data-toggle="modal" data-target="#chocolavacakeModal">
+                        <img class="img-thumbnail img-responsive" style="width: 380px; height: 278px;" alt="Choco Lava Cake" src="chocolavacake.jpg" title="Choco Lava Cake" data-target="chocolavacake"/>
+                        <div class="bottom-left">Choco Lava Cake</div>
+                </a>
+            </div>
+            <!-- Modal -->
+    <div class="modal fade" id="chocolavacakeModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Choco Lava Cake</h4>
+            </div>
+            <div class="modal-body">
+              <img class="img-responsive" style="width: 380px; height: 278px;" alt="Chocolavacake" src="chocolavacake.jpg" title="Choco Lava Cake"/>
+              <br>
+              <div class="row" id="cart">
+                  <div class="col-lg-5"><br>
+                      <div class="input-group number-spinner">
+                          <span class="input-group-btn">
+                              <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+                          </span>
+                          <input type="text" class="form-control text-center" value="1">
+                          <span class="input-group-btn">
+                              <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+                          </span>
+                      </div>
+                  </div>
+                  <div class=" col-lg-7">
+                      <img  src="cart1.png">
+                  </div><br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="headMenu">----------------</p><br/>
+</div><!-- /.container -->
+<footer class="page-footer footerStyle">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-4 mt-md-0 mt-3">
+                    <br/><img src="trans1.png" title="Main Logo"/>
+                    <h5 class="text-uppercase"><b>From the Box4U Team</b></h5>
+                    <p> Box4U, an online food ordering service was developed by Tanmay Bhagwat, Sachin Kamath, Jayesh Lokhande &amp; Jerin Thomas, students of CSE at RAIT.</p>
+                </div>
+                <hr class="clearfix w-100 d-md-none pb-6">
+                <div class="col-md-4 mb-md-0 mb-3">
+                        <h5 class="text-uppercase"><b>Links</b></h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="index.html#menuTab">Menu</a>
+                            </li>
+                            <li>
+                                <a href="#!">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#!">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class=" offset-md-3 col-md-4 mb-md-0 mb-3">
+                        <h5 class="text-uppercase"><b>Tech Stack</b></h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="https://en.wikipedia.org/wiki/HTML">HTML5</a>
+                            </li>
+                            <li>
+                                <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS3</a>
+                            </li>
+                            <li>
+                                <a href="https://getbootstrap.com">Bootstrap 3</a>
+                            </li>
+                            <li>
+                                <a href="https://nodejs.org/en/">Node JS</a>
+                            </li>
+                            <li>
+                                <a href="https://www.mysql.com">mySQL DB</a>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="index.html"> Box4U.com</a>
+        </div>
+    </footer>
+    </body>
