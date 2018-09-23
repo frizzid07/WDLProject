@@ -78,11 +78,11 @@
                                 <button style="background: red;     padding: 10px 10px; color: white;" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                                     <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
                               </button>
-	                        	<a class="navbar-brand" href="..\index.html">Home</a>
+	                        	<a class="navbar-brand" href="#">Home</a>
 	                        </div>
 	                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		                        <ul class="nav navbar-nav">
-		                            <li ><a href="..\index.html#menuTab">Menu</a></li>
+		                            <li ><a href="#menuTab">Menu</a></li>
 		                            <li class="dropdown" ><a class="dropdown-toggle" data-toggle="dropdown" href="#">Orders<span class="caret"></span></a>
 		                                <ul class="dropdown-menu list-group" >
 		                                    <li class="list list-group-item" ><a href="#">Corporate Orders</a></li>
@@ -98,9 +98,9 @@
 		                            </li>
 		                            <li class="dropdown" ><a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact<span class="caret"></span></a>
 		                                <ul class="dropdown-menu list-group" >
-		                                    <li class="list list-group-item" ><a href="#">E-mail</a></li>
+		                                    <li class="list list-group-item" ><a href="mailto:contact.box4u@gmail.com">E-mail</a></li>
 		                                    <li class="list list-group-item" ><a href="#">Office Postbox</a></li>
-		                                    <li class="list list-group-item" ><a href="#">Hotline</a></li>
+		                                    <li class="list list-group-item disabled" ><a href="#">Hotline</a></li>
 		                                </ul>
 		                            </li>
 		                        </ul>
@@ -163,7 +163,13 @@
 
 			<div class="container-fluid">
 				<div class="row">
-					<p class="headMenu" id="menu">---On the Menu---</p>
+					<p id='menuTab'></p>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="row">
+					<p class="headMenu">---On the Menu---</p>
 				</div>
 			</div>
 
