@@ -14,9 +14,35 @@
 	</head>
 	
 	<body id="mainPage" data-spy="scroll" data-target=".navbar">
+		<script type="text/javascript">
+			// Code for location
+            function getLocation()
+            {
+                var x = document.getElementById("loca");
+                if(navigator.geolocation)
+                    navigator.geolocation.watchPosition(showPosition,errorHandler);
+            }
+            function showPosition(position){
+                var x = document.getElementById("loca");
+                x.innerHTML = "Latitude: " + position.coords.latitude + " Longitude: " + position.coords.longitude;
+            }
+            function errorHandler(error){
+                var x = document.getElementById("loca");
+                if (error.code==error.PERMISSION_DENIED) 
+                    x.innerHTML="Location request denied"
+                else if (error.code==error.POSITION_UNVAILABLE) 
+                    x.innerHTML="Location INFO NOT AVAILABLE"
+                else if (error.code==error.TIMEOUT) 
+                    x.innerHTML="Location request denied"
+                else if (error.code==error.UNKNOWN_ERROR) 
+                    x.innerHTML="UNKNOWN ERROR"
+            }
+		</script>
+
 		<div class="container-fluid">	
 			<div class="row">
 				<div class="menuColumn">
+					<p class="location" id="loca" ></p>
 					<p class="pHomeHead"><a href="#"><img src="Logos\trans2.png" alt="Main Logo" vspace="10" title="Box4U" style="float:left" hspace="20"/></a>
 						<b>Fastest &amp; Freshest</b>
 					</p>
@@ -144,19 +170,19 @@
 			<div class="container">
 					<div class="row" style="margin-top: 20px;">
 						<div class="imgColumn col-lg-4 col-md-4 col-sm-6 col-xs-12">
-							<a href="soups.html">
+							<a href="Soups/soups.html">
 								<img class="img-thumbnail img-responsive" style="width: 380px; height: 278px;" alt="Soups" src="Menu_Thumbnail/soup.jpeg" title="Soups"/>
 								<div class="bottom-left">Soups</div>
 							</a>
 						</div>
 						<div class="imgColumn col-lg-4 col-md-4 col-sm-6 col-xs-12">
-							<a href="starters.html">
+							<a href="Desi Starters/starters.html">
 								<img class="img-thumbnail img-responsive" style="width: 380px; height: 278px;" alt="Desi Starters" src="Menu_Thumbnail/Desi_Starters.jpeg" title="Tasty Openers"/>
 								<div class="bottom-left">Desi Starters</div>
 							</a>
 						</div>
 						<div class="imgColumn col-lg-4 col-md-4 col-sm-6 col-xs-12">
-							<a href="Salad.jpeg">
+							<a href="Global Salads/Salad.jpeg">
 								<img class="img-thumbnail img-responsive" style="width: 380px; height: 278px;" alt="Salads" src="Menu_Thumbnail/Salad.jpeg" title="Veggie Delight"/>
 								<div class="bottom-left"> Global Salads</div>
 							</a>
@@ -164,40 +190,40 @@
 					</div>
 					<div class="row" style="margin-top: 20px;">
 							<div class="imgColumn col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<a href="curries.JPG">
+								<a href="Curries & Gravies/curries.html">
 									<img class="img-thumbnail img-responsive" style="width: 380px; height: 278px;" alt="Curries" src="Menu_Thumbnail/chickenCurry.JPG" title="Desi Curries"/>
 									<div class="bottom-left">Spicy Curries</div>
 								</a>
 							</div>
 							<div class="imgColumn col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<a href="breads.html">
+								<a href="Breads/breads.html">
 									<img class="img-thumbnail img-responsive" style="width: 380px; height: 278px;" alt="Breads" src="Menu_Thumbnail/Breads.jpeg" title="Fresh from the oven - Breads "/>
 									<div class="bottom-left">Breads</div>
 								</a>
 							</div>
 							<div class="imgColumn col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<a href="South Indian.jpeg">
+								<a href="Small Bites\smallbites.html">
 									<img class="img-thumbnail img-responsive" style="width: 380px; height: 278px;" alt="South Indian" src="Menu_Thumbnail/idliSambar.jpg" title="South Indian Delight"/>
-									<div class="bottom-left">South Indian</div>
+									<div class="bottom-left">Small Bites</div>
 								</a>
 							</div>
 					</div>
 					<div class="row" style="margin-top: 20px;">
 							<div class="imgColumn col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<a href="Fish.jpeg">
+								<a href="Seafood/seafoods.html">
 									<img class="img-thumbnail img-responsive" style="width: 380px; height: 278px;" alt="Seafood" src="Menu_Thumbnail/Seafood.jpeg" title="Authentic Seafood"/>
 									<div class="bottom-left">Seafood</div>
 								</a>
 							</div>
 							<div class="imgColumn col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<a href="brownie-dessert-cake-sweet-45202.jpeg">
+								<a href="Desserts/Desserts.html">
 									<img class="img-thumbnail img-responsive" style="width: 380px; height: 278px;" alt="Desserts" src="Menu_Thumbnail/Tiramisu
 									.jpg" title="Sweet &amp; Savoury Delights"/>
 									<div class="bottom-left">Desserts</div>
 								</a>
 							</div>
 							<div class="imgColumn col-lg-4 col-md-4 col-sm-6 col-xs-12">
-								<a href="juice.jpeg">
+								<a href="Beverages/Drinks.html">
 									<img class="img-thumbnail img-responsive" style="width: 380px; height: 278px;" alt="Drinks" src="Menu_Thumbnail/Beverages.jpeg" title="Drinks &amp; Cocktails"/>
 									<div class="bottom-left">Drinks</div>
 								</a>
