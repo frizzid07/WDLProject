@@ -34,13 +34,12 @@
 					}
 					// This is checking to see if the Geoeode Status is OK before proceeding
 					if (status == google.maps.GeocoderStatus.OK) {
-            			x.innerHTML = results[0].formatted_address;
+            			x.innerHTML = `Your Location: ${results[0].formatted_address}\n`;
 					}
 				});
 			}
             function showPosition(position){
 				getReverseGeocodingData(position.coords.latitude, position.coords.longitude);
-                //x.innerHTML = "Latitude: " + position.coords.latitude + " Longitude: " + position.coords.longitude;
             }
             function errorHandler(error){
                 var x = document.getElementById("loca");
