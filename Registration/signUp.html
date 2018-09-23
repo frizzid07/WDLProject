@@ -6,18 +6,23 @@
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-		<link rel="stylesheet" href="style.css"/>
-		<link rel="shortcut icon" href="favicon\boxIcon.png"/>
+		<link rel="stylesheet" href="../style.css"/>
+		<link rel="shortcut icon" href="../Logos/favicon\boxIcon.png"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<title>Box4U | Customer Registration</title>
 	</head>
-	
+	<script type="text/javascript">
+		function validation(field){
+			file="";
+			file =file + validateEmail(field.)
+		}
+	</script>
 	<body data-spy="scroll" data-target=".navbar">
 		<div class="container-fluid">	
 			<div class="row">
 				<div class="menuColumn" style="height: 100px;">
-					<p class="pHomeHead" style="text-indent: 0; font-family: Product Sans;top: 20px; left: 18%;font-size: 47px;"><a href="index.html"><img src="logos\trans2.png" alt="Main Logo" title="Box4U" style="float:left" hspace="10"/></a>
+					<p class="pHomeHead" style="text-indent: 0; font-family: Product Sans;top: 20px; left: 18%;font-size: 47px;"><a href="index.html"><img src="..\Logos\trans2.png" alt="Main Logo" title="Box4U" style="float:left" hspace="10"/></a>
                     <b>Customer Registration Form</b>
                     <a href="#"><img src="regForm.png" alt="Registration Form" title="Registration Form" style="float:right" hspace="10"/></a>
 					</p>
@@ -25,7 +30,7 @@
 		<div class="correction">
 			<nav class="navbar navbarDesign" data-spy="affix" data-offset-top="115">
 				  <ul class="nav navbar-nav">
-					<li class="active" ><a href="index.html">Home</a></li>
+					<li class="active" ><a href="../index.html">Home</a></li>
 					<li ><a href="index.html#menuTab">Menu</a></li>
 					<li class="dropdown" ><a class="dropdown-toggle" data-toggle="dropdown" href="#">Orders<span class="caret"></span></a>
 					  <ul class="dropdown-menu list-group" >
@@ -62,7 +67,7 @@
             </div>
             <div class="container">
 
-                    <form class="well form-horizontal formStyle" action=" " method="post"  id="contact_form">
+                    <form class="well form-horizontal formStyle" action="" method="post" onsubmit="validation(this)" id="contact_form">
                 <fieldset>
                 
                 <!-- Form Name -->
@@ -147,7 +152,6 @@
                   </div>
                 </div>
                 
-                
                 <!-- Text input-->
                        
                 <div class="form-group">
@@ -169,7 +173,7 @@
                 <div class="form-group">
                   <label class="col-md-4 control-label"></label>
                   <div class="col-md-4"><br>
-                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button class="btnStyle" style="width: 150px;height: 50px;" type="submit" class="btn" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSIGN UP!&nbsp&nbsp<span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+                    <button class="btnStyle" style="width: 150px;height: 50px;" type="submit" class="btn" onsubmit="validation(this)">SIGN UP!<span class="glyphicon glyphicon-send"></span></button>
                   </div>
                 </div>
                 <a href="index.html"><p style="text-align: center;color: darkred;">If you already have an Account, Click Here to Log In!</p></a>
@@ -182,7 +186,7 @@
                             <div class="container-fluid text-center text-md-left">
                                 <div class="row">
                                     <div class="col-md-4 mt-md-0 mt-3">
-                                        <br/><img src="logos\trans1.png" title="Main Logo"/>
+                                        <br/><img src="../Logos\trans1.png" title="Main Logo"/>
                                         <h5 class="text-uppercase"><b>From the Box4U Team</b></h5>
                                         <p> Box4U, an online food ordering service was developed by Tanmay Bhagwat, Sachin Kamath, Jayesh Lokhande &amp; Jerin Thomas, students of CSE at RAIT.</p>
                                     </div>
@@ -191,10 +195,10 @@
                                             <h5 class="text-uppercase"><b>Links</b></h5>
                                             <ul class="list-unstyled">
                                                 <li>
-                                                    <a href="index.html">Home</a>
+                                                    <a href="../index.html">Home</a>
                                                 </li>
                                                 <li>
-                                                    <a href="index.html#menuTab">Menu</a>
+                                                    <a href="../index.html#menuTab">Menu</a>
                                                 </li>
                                                 <li>
                                                     <a href="#!">About Us</a>
@@ -230,3 +234,6 @@
                                 <a href="index.html"> Box4U.com</a>
                             </div>
                         </footer>
+                    </div>
+                </body>
+                </html>
