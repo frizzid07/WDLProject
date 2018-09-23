@@ -16,28 +16,6 @@
     </head>
     <body onload="getLocation()" data-spy=scroll data-target=.navbar><!-- Check the name -->
         <script type="text/javascript">
-            // Code for location
-            function getLocation()
-            {
-                var x = document.getElementById("loca");
-                if(navigator.geolocation)
-                    navigator.geolocation.watchPosition(showPosition,errorHandler);
-            }
-            function showPosition(position){
-                var x = document.getElementById("loca");
-                x.innerHTML = "Latitude: " + position.coords.latitude + " Longitude: " + position.coords.longitude;
-            }
-            function errorHandler(error){
-                var x = document.getElementById("loca");
-                if (error.code==error.PERMISSION_DENIED) 
-                    x.innerHTML="Location request denied"
-                else if (error.code==error.POSITION_UNVAILABLE) 
-                    x.innerHTML="Location INFO NOT AVAILABLE"
-                else if (error.code==error.TIMEOUT) 
-                    x.innerHTML="Location request denied"
-                else if (error.code==error.UNKNOWN_ERROR) 
-                    x.innerHTML="UNKNOWN ERROR"
-            }
             // Code for snippet
             $(document).on('click', '.number-spinner button', function () {    
             var btn = $(this),
@@ -59,7 +37,6 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="menuColumn">
-                <p class="location" id="loca" ></p>
                 <p class="pHomeHead" style="left: 23%; top: 20px; text-indent: 10px;font-family: Product Sans;">
                     <a href="index.html"><img src="..\Logos\trans2.png" alt="Main Logo" vspace="10" title="Box4U" style="float:left" hspace="20"/></a>
                     <b style="font-size : 3vw">On the Menu - Breads</b>
