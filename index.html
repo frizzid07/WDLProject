@@ -15,7 +15,9 @@
 	</head>
 	
 	<body onload="getLocation()" id="mainPage" data-spy="scroll" data-target=".navbar">
+		<div style="font-family: 'Product Sans'; font-size: 20px; background-color: tomato;">
 		<script type="text/javascript">
+		
 			// Code for location
             function getLocation()
             {
@@ -23,6 +25,7 @@
                 if(navigator.geolocation)
                     navigator.geolocation.watchPosition(showPosition,errorHandler);
 			}
+			
 			function getReverseGeocodingData(lat, lng) {
 				var latlng = new google.maps.LatLng(lat, lng);
 				// This is making the Geocode request
@@ -32,9 +35,10 @@
 					if (status !== google.maps.GeocoderStatus.OK) {
 						alert(status);
 					}
-					// This is checking to see if the Geoeode Status is OK before proceeding
+					// This is checking to see if the Geocode Status is OK before proceeding
+					
 					if (status == google.maps.GeocoderStatus.OK) {
-            			x.innerHTML = `Your Location: ${results[0].formatted_address}\n`;
+            			x.style"" = <b>`Your Location: ${results[0].formatted_address}\n`;
 					}
 				});
 			}
@@ -52,7 +56,10 @@
                 else if (error.code==error.UNKNOWN_ERROR) 
                     x.innerHTML="UNKNOWN ERROR"
             }
+			
 		</script>
+		</div>
+		
 
 		<div class="container-fluid">	
 			<div class="row">
@@ -82,7 +89,7 @@
 					  </form>
 				</div>
 				<div>
-					<p class="signUpLink"><a href="signUp.html">Don't have an account? Click here to create a New Account!</a></p>
+					<p class="signUpLink"><a href="Registration/signUp.html">Don't have an account? Click here to create a New Account!</a></p>
 				</div>
 			</div>
 		</div>
