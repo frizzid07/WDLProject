@@ -93,6 +93,7 @@
                 <div class="container-fluid">
                     <div class="headMenu">
                         <p class="row" style="margin-top: 30px">-----Soups-----</p>
+						<div style="height: 25px;"></div>
                     </div>
                 </div>
                 <!-- <div class="container-fluid">
@@ -106,7 +107,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <!-- Cream of Tomato -->
                             <div class="thumbnail">
-                                <a href="#tomatoModa" data-toggle="modal" data-target="#tomatoModal">
+                                <a href="#tomatoModal" data-toggle="modal" data-target="#tomatoModal">
                                     <img class=" img-responsive" style="width: 380px; height: 278px;" alt="Cream of Tomato Soup" src="tomatoCream.jpg" title="Cream of Tomato Soup" data-target="#tomatoModal"/>
                                     <div class="bottom-left">Cream of Tomato</div>
                                 </a>
@@ -348,8 +349,88 @@
                             </div>
                           </div>
                         </div>
+						<div class="col-lg-4 col-lg-push-2 col-md-6 col-sm-6">
+                            <div class="thumbnail">
+                                <a href="#shrimpModal" data-toggle="modal" data-target="#shrimpModal">
+                                    <img class="img-responsive" style="width: 380px; height: 278px;" alt="Fresh Shrimp Soup" src="Fresh Shrimp Soup.jpg" title="Fresh Shrimp Soup"/>
+                                    <div class="bottom-left">Fresh Shrimp Soup</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="shrimpModal" tabindex="-1" role="dialog">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Fresh Shrimp Soup</h4>
+                              </div>
+                              <div class="modal-body"> 
+                                <img class="img-responsive" style="width: 380px; height: 278px;" alt="Fresh Shrimp Soup" src="Fresh Shrimp Soup.jpg" title="Fresh Shrimp Soup"/>
+                                <br>
+                                <div class="row" id="cart">
+                                    <div class="col-lg-5"><br>
+                                        <div class="input-group number-spinner">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+                                            </span>
+                                            <input type="text" class="form-control text-center" value="1">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <img id="cart" src="../Cart/cart1.png">
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
 
+                        <!-- Miso Chicken Soup -->
+                        <div class="col-lg-4 col-lg-push-2 col-md-6 col-md-push-3 col-sm-6 col-sm-push-3">
+                            <div class="thumbnail">
+                                <a href="#Miso Chicken SoupModal" data-toggle="modal" data-target="#Miso Chicken SoupModal">
+                                    <img class="img-responsive" style="width: 380px; height: 278px;" alt="Miso Chicken Soup" src="Miso Chicken Soup.jpg" title="Miso Chicken Soup"/>
+                                    <div class="bottom-left">Miso Chicken Soup</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="Miso Chicken SoupModal" tabindex="-1" role="dialog">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Miso Chicken Soup</h4>
+                              </div>
+                              <div class="modal-body"> 
+                                <img class="img-responsive" style="width: 380px; height: 278px;" alt="Miso Chicken Soup" src="Miso Chicken Soup.jpg" title="Miso Chicken Soup"/>
+                                <br>
+                                <div class="row" id="cart">
+                                    <div class="col-lg-5"><br>
+                                        <div class="input-group number-spinner">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+                                            </span>
+                                            <input type="text" class="form-control text-center" value="1">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <img id="cart" src="../Cart/cart1.png">
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                     </div> <!-- row end -->   
+					<p class="headMenu">----------------</p><br/>
                 </div> <!-- container end -->
             </div> <!-- row end -->
         </div> <!-- container-fluid end -->
