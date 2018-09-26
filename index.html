@@ -15,7 +15,6 @@
 	</head>
 	
 	<body onload="getLocation()" id="mainPage" data-spy="scroll" data-target=".navbar">
-		<div style="font-family: 'Product Sans'; font-size: 20px; background-color: tomato;">
 		<script type="text/javascript">
 		
 			// Code for location
@@ -38,7 +37,7 @@
 					// This is checking to see if the Geocode Status is OK before proceeding
 					
 					if (status == google.maps.GeocoderStatus.OK) {
-            			x.style"" = <b>`Your Location: ${results[0].formatted_address}\n`;
+            			x.innerHTML = `Your Location: ${results[0].formatted_address}\n`;
 					}
 				});
 			}
@@ -58,13 +57,12 @@
             }
 			
 		</script>
-		</div>
 		
 
 		<div class="container-fluid">	
 			<div class="row">
 				<div class="menuColumn">
-					<p class="location" id="loca" ></p>
+					<p class="location" style="font-size: 15px; font-family: 'Product Sans'; color: white;" id="loca" ></p>
 					<p class="pHomeHead"><a href="#"><img src="Logos\trans2.png" alt="Main Logo" vspace="10" title="Box4U" style="float:left" hspace="20"/></a>
 						<b>Fastest &amp; Freshest</b>
 					</p>
